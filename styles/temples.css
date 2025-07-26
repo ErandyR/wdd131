@@ -88,8 +88,9 @@ nav {
 .navigation {
 	justify-content: space-evenly;
 	list-style: none;
-	color: var(--nav-link-color);
+	color: var(--nav-background-color);
 	text-decoration: none;
+	font-weight: 500;
 }
 
 .navigation a {
@@ -97,6 +98,8 @@ nav {
 	padding: 1rem 2rem;
 	text-align: center;
 	text-decoration: none;
+	color: var(--nav-background-color);
+	font-weight: 500;
 }
 
 .navigation a:hover {
