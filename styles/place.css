@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #89a7d8;
+    --secondary-color: #1a3604;
+    --accent1-color: #f7a15e;
+    --accent2-color: #c5651b;
+
+    --heading-font: "Mozilla Headline", sans-serif;
+    --paragraph-font: "Mozilla Text", sans-serif;
+
+}
+
+body {
+    font-family: var(--paragraph-font);
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+
+
+.header-container {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: var(--accent1-color) solid 1rem;
+}
+
+.hero-img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: var(--accent1-color) solid .2rem;
+}
+
+.info-container {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.rows-info {
+    margin-top: 1rem;
+}
+
+.info-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.info-row p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.info-row span {
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 15px 0;
+}

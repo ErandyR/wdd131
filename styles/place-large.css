@@ -1,0 +1,35 @@
+@media (min-width: 600px) {
+    .hero-img {
+        position: static;
+        display: block;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .hero-img {
+        position: relative;
+    }
+
+    .info-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(128, 128, 128, 0.5);
+        border-radius: 10px;
+        color: white;
+    }
+
+    #overlay-1 {
+        top: 150px;
+        left: 80px;
+    }
+
+    #overlay-2 {
+        top: 480px;
+        left: 1000px;
+    }
+
+}

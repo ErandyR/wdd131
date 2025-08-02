@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="A country or place where I live, have visited, or wish to visit.">
+    <meta name="author" content="Erandy Ramirez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Mozilla+Headline:wght@200..700&family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Mexico</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img class="hero-img" src="images/hero-small.webp" alt="Image from Cholula, Mexico." width="500"
+                    height="250">
+            </picture>
+        </div>
+        <div id="overlay-1" class="info-container">
+            <h2>Data</h2>
+            <div class="rows-info">
+                <div class="info-row">
+                    <p>Area:</p><span>1,964,375 sq km</span>
+                </div>
+                <div class="info-row">
+                    <p>Population:</p><span>126 million</span>
+                </div>
+                <div class="info-row">
+                    <p>Capital:</p><span>Mexico City</span>
+                </div>
+                <div class="info-row">
+                    <p>Languages:</p><span>Spanish</span>
+                </div>
+                <div class="info-row">
+                    <p>Currency:</p><span>Mexican Peso (MXN)</span>
+                </div>
+                <div class="info-row">
+                    <p>Time Zone:</p><span>UTC-6 (CST)</span>
+                </div>
+                <div class="info-row">
+                    <p>Calling Code:</p><span>+52</span>
+                </div>
+                <div class="info-row">
+                    <p>Internet TLD:</p><span>.mx</span>
+                </div>
+            </div>
+        </div>
+        <div id="overlay-2" class="info-container">
+            <h2>Weather</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" fill="orange" stroke="#555"
+                class="bi bi-cloud-sun-fill" viewBox="0 0 16 16">
+                <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z" />
+                <path
+                    d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+            </svg>
+            <div class="rows-info">
+                <div class="info-row">
+                    <p>Temperature:</p><span>27°C</span>
+                </div>
+                <div class="info-row">
+                    <p>Conditions:</p><span>Partly Cloudy</span>
+                </div>
+                <div class="info-row">
+                    <p>Wind:</p><span>15 km/h NW</span>
+                </div>
+                <div class="info-row">
+                    <p>Wind Chill:</p><span>26°C</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>©️<span id="currentyear"></span> Erandy Ramirez. Tlaxcala, Mexico.</p>
+        <p>Last Modified:<span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
