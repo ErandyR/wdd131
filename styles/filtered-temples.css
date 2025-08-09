@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #443650;
+    --secondary-color: #a7a989;
+    --accent1-color: #BA73FA;
+    --accent2-color: #f7ff9a;
+
+    --heading-font: "Special Elite", system-ui;
+    --paragraph-font: "Funnel Display", sans-serif;
+
+    --nav-background-color: #201429;
+    --nav-link-color: #b892db;
+    --nav-hover-link-color: #b4b499;
+    --nav-hover-background-color: #4b4c42;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    max-width: 700px;
+    margin: 0;
+}
+
+.home-h1 {
+    text-align: center;
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+    padding: 15px 0;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.header-container {
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+.h2 {
+    padding-left: 1rem;
+    align-self: center;
+}
+
+.container-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.navigation {
+    justify-content: space-evenly;
+    list-style: none;
+    color: var(--nav-background-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-background-color);
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.navigation.active a {
+    display: block;
+}
+
+
+.grid-images {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 900px;
+}
+
+.temple-images {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 15px 0;
+}
+
+figure {
+    background-color: #726c722a;
+    padding: 1rem 1rem;
+    border-radius: 3%;
+    border: 1px solid #726c722a;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album Page</title>
+    <meta name="description" content="A picture album page that is responsive in small and larger views">
+    <meta name="author" content="Erandy Ramirez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temple.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="h2" class="h2">Temple Album</h1>
+            <div class="container-nav">
+                <button id="menu"></button>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#" id="home">Home</a></li>
+                        <li><a href="#" id="old">Old</a></li>
+                        <li><a href="#" id="new">New</a></li>
+                        <li><a href="#" id="large">Large</a></li>
+                        <li><a href="#" id="small">Small</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 class="home-h1">Home</h2>
+        <div id="temples-container" class="grid-images">
+        </div>
+    </main>
+    <footer class="footer secondary-color">
+        <p>©️<span id="currentyear"></span> Erandy Ramirez. Tlaxcala, Mexico.</p>
+        <p>Last Modified:<span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
