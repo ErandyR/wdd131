@@ -7,11 +7,6 @@
     <title>Form Page</title>
     <meta name="description" content="A HTML form with a confirmation page">
     <meta name="author" content="Erandy Ramirez">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script defer src="scripts/form.js"></script>
     <script defer src="scripts/getdates.js"></script>
@@ -21,7 +16,56 @@
     <header>
         <h1>Product Review</h1>
     </header>
-    <main></main>
+    <main>
+        <form method="get" action="review.html">
+
+            <label for="productName">Product Review</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label class="radio-button">☆<input type="radio" id="rating1" name="rating" value="1" required></label>
+                <label class="radio-button">☆☆<input type="radio" id="rating2" name="rating" value="2"></label>
+                <label class="radio-button">☆☆☆<input type="radio" id="rating3" name="rating" value="3"></label>
+                <label class="radio-button">☆☆☆☆<input type="radio" id="rating4" name="rating" value="4"></label>
+                <label class="radio-button">☆☆☆☆☆<input type="radio" id="rating5" name="rating" value="5"></label>
+            </fieldset>
+
+
+            <fieldset>
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <label class="checkbox"><input type="checkbox" id="feature1" name="features"
+                        value="Durability">Durability</label>
+                <label class="checkbox"><input type="checkbox" id="feature2" name="features"
+                        value="Design">Design</label>
+                <label class="checkbox"><input type="checkbox" id="feature3" name="features"
+                        value="Performance">Performance</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="reviewText">Written Review</label>
+                <textarea id="reviewText" name="reviewText" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    </main>
     <footer class="footer secondary-color">
         <p>©️<span id="currentyear"></span> Erandy Ramirez. Tlaxcala, Mexico.</p>
         <p>Last Modified:<span id="lastModified"></span></p>

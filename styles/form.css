@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+header,
+footer {
+    background: rgb(75, 54, 85);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border: 2px solid rgb(75, 54, 85);
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+label,
+legend {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 0 0 10px;
+    margin: 5px 0 5px 0;
+    max-width: 450px;
+}
+
+input[type="submit"] {
+    background: rgb(135, 82, 160);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+    cursor: pointer;
+    width: 95%;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+input[type="radio"] {
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background: rgb(197, 164, 212);
+    color: black;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+.radio-button {
+    display: inline-block;
+    margin-left: 8%;
+}
+
+.checkbox {
+    padding-top: 5px;
+    font-size: .8rem;
+}
+
+.checkbox input {
+    display: inline-block;
+    width: 20px;
+    margin-right: .8rem;
+}
