@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Conveyor Solutions</title>
+    <meta name="description" content="Home page of the Industrial Conveyor Solutions website.">
+    <meta name="author" content="Erandy Ramirez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/home-page.css">
+    <link rel="stylesheet" href="styles/home-page-large.css">
+    <script defer src="scripts/home-page.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo" id="logoHomepage">
+                <img src="images/logo.png" alt="Home Page">
+            </a>
+            <div class="container-nav">
+                <button id="menu"></button>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#">Home Page</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#aboutUs">About Us</a></li>
+                        <li><a href="#contactUs">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-hero-image">
+            <h1>Conveying Reliability, Delivering Results</h1>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero-image-medium.webp" media="(min-width: 500px)">
+                    <img class="hero-img" src="images/hero-image-small.webp" alt="conveyor solutions" width="500"
+                        height="250" loading="lazy">
+                </picture>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <h2>Industrial Equipment</h2>
+            <div class="carousel">
+                <div id="carousel-items" class="carousel-items">
+                    <!-- Dynamic items here -->
+                </div>
+                <div class="carousel-buttons">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="aboutUs" class="about-container">
+                <h3>TRUST THE EXPERTS</h3>
+                <p>
+                    With decades of experience in industrial material handling, we design and supply
+                    conveyor systems that maximize efficiency and reliability. Our team combines
+                    engineering expertise with customized solutions to meet the unique needs of
+                    warehouses, manufacturing plants, and production lines. Count on us to deliver
+                    durable, safe, and high-performance conveyors that keep your operations moving.
+                </p>
+            </div>
+            <div id="contactUs">
+                <h3>Contact Us</h3>
+                <p>Fields marked with an asterisk (<span style="color:red">*</span>) are required.</p>
+                <form method="get" action="confirmation.html">
+
+                    <fieldset>
+                        <label for="name">Full Name <span style="color:red">*</span></label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="company">Company Name </span></label>
+                        <input type="text" id="company" name="company">
+
+                        <label for="email">Email Address <span style="color:red">*</span></label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    <fieldset>
+                        <label for="beltType">Conveyor Belt Type <span style="color:red">*</span></label>
+                        <select id="beltType" name="beltType" required>
+                            <option value="">-- Select Type --</option>
+                            <option value="roller">Roller Conveyor</option>
+                            <option value="belt">Flat Belt Conveyor</option>
+                            <option value="modular">Modular Plastic Belt</option>
+                            <option value="chain">Chain Conveyor</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="details">Additional Details</label>
+                        <textarea id="details" name="details" rows="4"
+                            placeholder="Please provide any specific requirements..."></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send message">
+                </form>
+            </div>
+        </div>
+        <div class="clients">
+            <h3>Our Clients</h3>
+            <div class="clients-container">
+                <img src="images/client-logo1.png" alt="client's logo" loading="lazy">
+                <img src="images/client-logo2.png" alt="client's logo" loading="lazy">
+                <img src="images/client-logo3.png" alt="client's logo" loading="lazy">
+                <img src="images/client-logo4.png" alt="client's logo" loading="lazy">
+                <img src="images/client-logo5.png" alt="client's logo" loading="lazy">
+                <img src="images/client-logo6.png" alt="client's logo" loading="lazy">
+                <img src="images/client-logo7.png" alt="client's logo" loading="lazy">
+                <img src="images/client-logo8.png" alt="client's logo" loading="lazy">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>©️<span id="currentyear"></span> Industrial Conveyor Solutions</p>
+        <a href="#contactUs">Contact Us</a>
+    </footer>
+</body>
+
+</html>

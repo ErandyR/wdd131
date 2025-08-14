@@ -1,0 +1,110 @@
+@media (min-width: 600px) {
+
+    #menu {
+        display: none;
+    }
+
+
+    #logoHomepage {
+        display: inline-block;
+        width: 100vw;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    .container-nav {
+        width: 75%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .carousel-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clients-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    .container-hero-image {
+        height: 400px;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    #menu {
+        display: none;
+    }
+
+    #logoHomepage {
+        display: inline-block;
+        width: 20%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    .container-nav {
+        width: 70%;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .carousel-container {
+        text-align: center;
+        margin: 4rem 0;
+    }
+
+    .carousel-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .clients-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    .container-hero-image {
+        height: 600px;
+    }
+
+    .container-hero-image h1 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--background-color);
+        font-size: 2rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        padding: 0 10px;
+    }
+
+}
